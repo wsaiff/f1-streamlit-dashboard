@@ -4,6 +4,32 @@ An interactive Formula 1 analytics dashboard built with **Streamlit, PostgreSQL,
 
 The project combines data engineering and visualization in a multi-page web application. It explores Formula 1 data, provides descriptive statistics and driver visualizations, and includes a focused **Red Bull Racing analysis heading into the 2019 season**.
 
+## 📸 Dashboard Preview
+
+### 🐂 Red Bull Racing — Road to 2019
+
+A data-storytelling view exploring Red Bull Racing's historical performance and position heading into the 2019 Formula 1 season.
+
+![Red Bull Racing analysis](screenshots/red-bull-story.png)
+
+### 📊 Formula 1 Visualizations
+
+Interactive visualizations explore driver performance, including the top Formula 1 drivers and Lewis Hamilton's performance across seasons.
+
+![Formula 1 visualizations](screenshots/visualizations.png)
+
+### ⚡ Performance & Caching
+
+The application uses Streamlit caching and session state to reduce repeated database work and improve performance.
+
+![Technical details](screenshots/technical-details.png)
+
+### 🏗️ Application Architecture
+
+SQL filtering and aggregation are performed in PostgreSQL before results are returned to the application, while responsibilities are separated across database, query, state, and presentation layers.
+
+![Application architecture](screenshots/architecture.png)
+
 ## ✨ Project Highlights
 
 - Multi-page Streamlit dashboard
@@ -19,15 +45,18 @@ The project combines data engineering and visualization in a multi-page web appl
 ## 📊 Dashboard Pages
 
 ### 1. Descriptive Statistics
+
 Explore Formula 1 database tables from the sidebar, display the selected data, and generate summary statistics with Pandas.
 
 ### 2. Data Visualizations
+
 Includes visual analysis such as:
 
 - Top 5 Formula 1 drivers by points
 - Lewis Hamilton's points across seasons
 
 ### 3. Red Bull Racing — Road to 2019
+
 A data-storytelling page that uses historical results to explore Red Bull's position heading into the 2019 season.
 
 The analysis covers:
@@ -40,6 +69,7 @@ The analysis covers:
 - Red Bull's closest competitors in the 2018 constructor standings
 
 ### 4. Technical Details
+
 Explains how the application is structured and how repeated work is reduced as the application grows, including:
 
 - `st.cache_resource` for the database connection
