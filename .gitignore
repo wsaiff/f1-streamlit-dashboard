@@ -1,0 +1,24 @@
+# Environment and secrets
+.env
+.envrc
+.streamlit/secrets.toml
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local database dump / generated data
+database/init/*.sql
+!database/init/.gitkeep
+*.gz
+
+# Documentation/build output
+doctrees/
+html/
+
+# OS / editor files
+.DS_Store
+.vscode/
+.idea/
